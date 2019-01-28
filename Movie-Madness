@@ -1,0 +1,60 @@
+var movie = [
+    {   title: "The French Connection",
+        section: "Academy Awards",
+        stars: 4 },
+    {   title: "To Live and Die in L.A.",
+        section: "Hollywood Directors: Friedken",
+        stars: 4 },
+    {   title: "The Lords of Flatbush",
+        section: "Action Heroes: Stallone",
+        stars: 4 },
+    {   title: "On the Waterfront",
+        section: "Academy Awards",
+        stars: 4 },
+];
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 160, width, 10);
+
+for (var i = 0; i < movie.length; i++){
+    fill(0, 242, 255);
+    rect(10 + i * 100, 18, 80, 142);
+    fill(0, 0, 0);
+    text(movie[i].title, 15 + i * 100, 29, 70, 100);
+    text(movie[i].section, 15 + i * 100, 69, 70, 100);
+    for (var s = 0; s < movie[i].stars; s++) {
+    image(getImage("cute/Star"), 10 + s * 20 + i *100, 129, 20, 31);
+    }
+}
+
+fill(173, 117, 33);
+rect(0, 344, width, 10);
+
+
+var movie = [
+    {   title: "Ms. 45",
+        section: "Independent Filmmakers: Abel Ferrara",
+        stars: 4 },
+    {   title: "Martin",
+        section: "Horror Directors: George Romero",
+        stars: 4 },
+    {   title: "Revenge",
+        section: "New Releases",
+        stars: 4 },
+    {   title: "The Deer Hunter",
+        section: "Academy Awards",
+        stars: 4 },
+];
+
+
+for (var i = 0; i < movie.length; i++){
+    fill(0, 242, 255);
+    rect(10 + i * 100, 202, 80, 142);
+    fill(0, 0, 0);
+    text(movie[i].title, 15 + i * 100, 210, 70, 100);
+    text(movie[i].section, 15 + i * 100, 245, 70, 100);
+    for (var s = 0; s < movie[i].stars; s++) {
+    image(getImage("cute/Star"), 10 + s * 20 + i *100, 311, 20, 31);
+    }
+}
